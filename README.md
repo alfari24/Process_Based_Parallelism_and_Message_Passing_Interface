@@ -1,5 +1,12 @@
 
 # Process_Based_Parallelism_and_Message_Passing_Interface
+Process Based Parallelism is making programs that run in parallel with an approach using processes (not threads)
+
+Message Passing is used in Distributed Memory. In message passing, the program that runs in one pair (core-memory) is called a process. Two processes can communicate by calling a function, process 1 calls the send function and process 2 calls the receive function. The implementation of message passing is known as Message Passing Interface (MPI). MPI is not a new programming language but MPI is a library that is in several programming languages such as C, Fortran, Python.
+
+In distributed memory, cores can only access their own memory, private memory. From the programmer's point of view, a distributed memory system consists of a collection of pairs
+memory that is connected to the network and memory associated with the core that can only be accessed directly by that core
+
 need : 
 - install mpiexec (https://www.microsoft.com/enus/download/details.aspx?id=57467)
 - pip install pip install mpi4py
